@@ -1,0 +1,642 @@
+#admin_image {
+    width: 10rem;
+    height: 10rem;
+    background: url(../../assets/img/admin.png) center/cover no-repeat;
+    border-radius: 91px;
+    border: 2px solid #000
+}
+
+#admin_dashboard {
+    width: 25%;
+    height: 63rem;
+    background: #a3b3ed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px
+}
+
+.fa.fa-exchange.list_icon,
+.fa.fa-square.list_icon,
+.fa.fa-user.list_icon,
+.icon.ion-android-home.llst_icon,
+.icon.ion-person-stalker.list_icon,
+.material-icons.list_icon {
+    padding: 5px;
+    font-size: 20px
+}
+
+.fa.fa-registered.list_icon {
+    font-size: 20px;
+    padding: 5px
+}
+
+#big_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}
+
+#show_container {
+    width: 73%
+}
+
+#notice_container {
+    /* margin-top: 215px; */
+    margin-left: 50px
+}
+
+#Admin_room_details,
+#admin_notice_container,
+#registration_big_container,
+#super_big_container {
+    display: flex;
+    align-items: center
+}
+
+#complain_box {
+    width: 59%
+}
+
+.text_input {
+    margin: 10px
+}
+
+.list_item_link {
+    text-decoration: none;
+    color: #000
+}
+
+.rooms_contain {
+    width: 25rem;
+    background: #d3def3;
+    margin: 20px
+}
+
+#rooms_information {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%
+}
+
+#form_details {
+    width: 70%
+}
+
+#register_button {
+    display: flex;
+    justify-content: space-around
+}
+
+.button_register {
+    width: 10rem
+}
+
+.contact-clean {
+    background: #f1f7fc
+}
+
+.contact-clean form {
+    max-width: 620px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 4px;
+    color: #505e6c;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, .1)
+}
+
+.contact-clean h2 {
+    margin-top: 5px;
+    font-weight: 700;
+    font-size: 28px;
+    margin-bottom: 36px;
+    color: inherit
+}
+
+.contact-clean form .form-control {
+    background: #fff;
+    border-radius: 2px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, .05);
+    outline: 0;
+    color: inherit;
+    padding-left: 12px;
+    height: 42px
+}
+
+.contact-clean form .form-control:focus {
+    border: 1px solid #b2b2b2
+}
+
+.contact-clean form textarea.form-control {
+    min-height: 100px;
+    max-height: 260px;
+    padding-top: 10px;
+    resize: vertical
+}
+
+.contact-clean form .btn {
+    padding: 16px 32px;
+    border: none;
+    background: 0 0;
+    box-shadow: none;
+    text-shadow: none;
+    opacity: .9;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: .4px;
+    line-height: 1;
+    outline: 0!important
+}
+
+.contact-clean form .btn:hover,
+.newsletter-subscribe form .btn:hover {
+    opacity: 1
+}
+
+.contact-clean form .btn:active,
+.login-dark form .btn-primary:active,
+.newsletter-subscribe form .btn:active,
+.register-photo form .btn-primary:active {
+    transform: translateY(1px)
+}
+
+.contact-clean form .btn-primary {
+    background-color: #055ada!important;
+    margin-top: 15px;
+    color: #fff
+}
+
+.footer-dark {
+    padding: 50px 0;
+    color: #f0f9ff;
+    background-color: #282d32
+}
+
+.footer-dark h3 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 16px
+}
+
+.footer-dark ul {
+    padding: 0;
+    list-style: none;
+    line-height: 1.6;
+    font-size: 14px;
+    margin-bottom: 0
+}
+
+.footer-dark ul a {
+    color: inherit;
+    text-decoration: none;
+    opacity: .6
+}
+
+.footer-dark ul a:hover {
+    opacity: .8
+}
+
+.footer-dark .item.text {
+    margin-bottom: 36px
+}
+
+@media (max-width:767px) {
+    .contact-clean {
+        padding: 20px 0
+    }
+    .contact-clean form {
+        padding: 30px
+    }
+    .footer-dark .item:not(.social) {
+        text-align: center;
+        padding-bottom: 20px
+    }
+    .footer-dark .item.text {
+        margin-bottom: 0
+    }
+}
+
+.footer-dark .item.text p {
+    opacity: .6;
+    margin-bottom: 0
+}
+
+#facilities_para,
+.footer-dark .item.social {
+    text-align: center
+}
+
+.footer-dark .item.social>a {
+    font-size: 20px;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, .4);
+    margin: 0 8px;
+    color: #fff;
+    opacity: .75
+}
+
+.footer-dark .item.social>a:hover {
+    opacity: .9
+}
+
+.footer-dark .copyright {
+    text-align: center;
+    padding-top: 24px;
+    opacity: .3;
+    font-size: 13px;
+    margin-bottom: 0
+}
+
+.login-dark {
+    height: 1000px;
+    background: url(../../assets/img/star-sky.jpg) 0 0/cover #475d62;
+    position: relative
+}
+
+.login-dark form {
+    max-width: 320px;
+    width: 90%;
+    background-color: #1e2833;
+    padding: 40px;
+    border-radius: 4px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #fff;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, .2)
+}
+
+.login-dark .illustration {
+    text-align: center;
+    padding: 15px 0 20px;
+    font-size: 100px;
+    color: #2980ef
+}
+
+.login-dark form .form-control {
+    background: 0 0;
+    border: none;
+    border-bottom: 1px solid #434a52;
+    border-radius: 0;
+    box-shadow: none;
+    outline: 0;
+    color: inherit
+}
+
+.login-dark form .btn-primary {
+    background: #214a80;
+    border: none;
+    border-radius: 4px;
+    padding: 11px;
+    box-shadow: none;
+    margin-top: 26px;
+    text-shadow: none;
+    outline: 0
+}
+
+.login-dark form .btn-primary:active,
+.login-dark form .btn-primary:hover {
+    background: #214a80;
+    outline: 0
+}
+
+.login-dark form .forgot,
+.register-photo form .already {
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    color: #6f7a85;
+    opacity: .9;
+    text-decoration: none
+}
+
+.login-dark form .forgot:active,
+.login-dark form .forgot:hover {
+    opacity: 1;
+    text-decoration: none
+}
+
+.newsletter-subscribe {
+    color: #313437;
+    background-color: #fff;
+    padding: 50px 0
+}
+
+.newsletter-subscribe p {
+    color: #7d8285;
+    line-height: 1.5
+}
+
+.newsletter-subscribe h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    line-height: 1.5;
+    padding-top: 0;
+    margin-top: 0;
+    color: inherit
+}
+
+.newsletter-subscribe .intro {
+    font-size: 16px;
+    max-width: 500px;
+    margin: 0 auto 25px
+}
+
+.newsletter-subscribe .intro p {
+    margin-bottom: 35px
+}
+
+.newsletter-subscribe form {
+    justify-content: center
+}
+
+.newsletter-subscribe form .form-control {
+    background: #eff1f4;
+    border: none;
+    border-radius: 3px;
+    box-shadow: none;
+    outline: 0;
+    color: inherit;
+    text-indent: 9px;
+    height: 45px;
+    margin-right: 10px;
+    min-width: 250px
+}
+
+.newsletter-subscribe form .btn {
+    padding: 16px 32px;
+    border: none;
+    background: 0 0;
+    box-shadow: none;
+    text-shadow: none;
+    opacity: .9;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: .4px;
+    line-height: 1
+}
+
+.newsletter-subscribe form .btn-primary {
+    background-color: #055ada!important;
+    color: #fff;
+    outline: 0!important
+}
+
+@media (min-width:576px) {
+    .newsletter-subscribe form .form-control {
+        display: inline-block;
+        width: auto;
+        vertical-align: middle
+    }
+}
+
+.register-photo {
+    background: #f1f7fc;
+    padding: 80px 0
+}
+
+.register-photo .image-holder {
+    display: table-cell;
+    width: auto;
+    background: url(../../assets/img/meeting.jpg) 0 0/cover
+}
+
+.register-photo .form-container {
+    display: table;
+    max-width: 900px;
+    width: 90%;
+    margin: 0 auto;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, .1)
+}
+
+.register-photo form {
+    display: table-cell;
+    width: 400px;
+    background-color: #fff;
+    padding: 40px 60px;
+    color: #505e6c
+}
+
+@media (max-width:991px) {
+    .footer-dark .item.social {
+        text-align: center;
+        margin-top: 20px
+    }
+    .register-photo form {
+        padding: 40px
+    }
+}
+
+.register-photo form h2 {
+    font-size: 24px;
+    line-height: 1.5;
+    margin-bottom: 30px
+}
+
+.register-photo form .form-control {
+    background: #f7f9fc;
+    border: none;
+    border-bottom: 1px solid #dfe7f1;
+    border-radius: 0;
+    box-shadow: none;
+    outline: 0;
+    color: inherit;
+    text-indent: 6px;
+    height: 40px
+}
+
+.register-photo form .form-check {
+    font-size: 13px;
+    line-height: 20px
+}
+
+.register-photo form .btn-primary {
+    background: #f4476b;
+    border: none;
+    border-radius: 4px;
+    padding: 11px;
+    box-shadow: none;
+    margin-top: 35px;
+    text-shadow: none;
+    outline: 0!important
+}
+
+.register-photo form .btn-primary:active,
+.register-photo form .btn-primary:hover {
+    background: #eb3b60
+}
+
+.navbar_list {
+    display: flex
+}
+
+#profile_image {
+    height: 10rem;
+    width: 10rem;
+    background: url(../../assets/img/admin.png) center/cover no-repeat;
+    border-radius: 91px;
+    border: 2px solid #000
+}
+
+#profile_big_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 50rem;
+    background: #a3b3ed;
+    font-size: 21px
+}
+
+#list {
+    margin-top: 66px;
+    list-style: none;
+    text-decoration: none
+}
+
+.fa.fa-exchange.llst_icon {
+    font-size: 15px;
+    padding: 6px
+}
+
+.fa.fa-comment.llst_icon {
+    padding: 1px;
+    font-size: 16px
+}
+
+.far.fa-money-bill-alt.llst_icon {
+    font-size: 16px;
+    padding: 5px
+}
+
+svg {
+    padding: 5px;
+    font-size: 33px
+}
+
+#home {
+    font-family: sans-serif
+}
+
+.list_items {
+    margin: 7px;
+    list-style: none;
+    color: #000
+}
+
+#nav_container {
+    background: #a3b3ed;
+    font-size: 20px
+}
+
+#about_us_button,
+#navbar {
+    background: #a3b3ed
+}
+
+.social_media {
+    padding: 10px
+}
+
+#navbar_brand {
+    margin: 10px;
+    font-size: 30px
+}
+
+#main_page {
+    height: 50rem;
+    background: url(../../assets/img/main_page.png) center/cover no-repeat fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column
+}
+
+#main_heading {
+    font-size: 3rem
+}
+
+#heading_para {
+    font-size: 20px
+}
+
+#about_us {
+    height: 40rem;
+    margin-top: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+#about_us_image {
+    background: url(../../assets/img/about_page.png) center/cover no-repeat;
+    width: 40%;
+    height: 30rem
+}
+
+#about_us_content {
+    width: 30%;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+
+#about_us_para {
+    padding: 20px;
+    text-align: center
+}
+
+#facilities_heading {
+    text-align: center;
+    font-family: cursive
+}
+
+.facilities_item {
+    height: 10rem;
+    width: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none
+}
+
+.facilities_icon {
+    font-size: 50px;
+    color: #a0a2a8
+}
+
+#container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px
+}
+
+#footer {
+    margin-top: 50px
+}
+
+a:hover {
+    color: #2d3138
+}
+
+#big_notice_container {
+    width: 50%;
+}
