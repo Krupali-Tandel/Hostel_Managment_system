@@ -36,7 +36,7 @@
   <path d="M7 18C5.34315 18 4 16.6569 4 15H20C20 16.6569 18.6569 18 17 18H7Z" fill="currentColor"></path>
   <path d="M3 11C2.44772 11 2 11.4477 2 12C2 12.5523 2.44772 13 3 13H21C21.5523 13 22 12.5523 22 12C22 11.4477 21.5523 11 21 11H3Z" fill="currentColor"></path>
 </svg><a class="list_item_link" href="#">Menu</a></li>
-                <li class="list_items"><a class="list_item_link" href="#"><i class="fa fa-exchange list_icon"></i>Change Password</a></li>
+                <li class="list_items"><a class="list_item_link" href="#"><i class="fa fa-exchange list_icon"></i>Show Complaints</a></li>
                 <li class="list_items"><a class="list_item_link" href="#"><i class="fa fa-registered list_icon"></i>Attendance</a></li>
                 <li class="list_items"><a class="list_item_link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none">
 <path d="M17 16L21 12M21 12L17 8M21 12L7 12M13 16V17C13 18.6569 11.6569 20 10 20H6C4.34315 20 3 18.6569 3 17V7C3 5.34315 4.34315 4 6 4H10C11.6569 4 13 5.34315 13 7V8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>

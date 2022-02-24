@@ -1,6 +1,5 @@
 <?php 
- include 'partials/dbconnect.php';
-
+include 'partials/dbconnect.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -16,13 +15,6 @@
     <link rel="stylesheet" href="assets/fonts/material-icons.min.css">
     <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
     <link rel="stylesheet" href="assets/css/styles.min.css">
-    <style>
-        .container{
-            display: flex;
-    flex-wrap: wrap;
-    width: 80%;
-        }
-    </style>
 </head>
 
 <body>
@@ -70,21 +62,19 @@
             </div>
         </nav>
     </div>
-    <div id="notice_container">
+    <div id="complain_container">
         <div class="container">
             <?php 
-                $sqle ="SELECT * FROM `notice` ";
-                $resulte  = mysqli_query($conn , $sqle);
-                $row = mysqli_num_rows($resulte);
-                if($row > 0){
-                 while($rowDATA = mysqli_fetch_assoc($resulte)){
+                $sqlc ="SELECT * FROM `compalin` ";
+                $resultc  = mysqli_query($conn , $sqlc);
+                $rowc = mysqli_num_rows($resultc);
+                if($rowc  > 0){
+                 while($rowcDATA = mysqli_fetch_assoc($resultc)){
                      echo '<div class="card" style="width: 18rem;">
                      <div class="card-body">
-                         <h5 class="card-title">Notice </h5>
-
-                         <p class="card-text">'.$rowDATA['DateAndTime'] .'</p>
-                         <p class="card-text">'.$rowDATA['Notice_content'] .'</p>
-                        
+                         <h5 class="card-title">Student Name'. $rowcDATA['student_name'] .'</h5>
+                         <p class="card-text">'.$rowcDATA['Complaint'] .'</p>
+                         <button id="Delete" class="btn btn-primary" name="delete" type="button">Delete</button>
  
                      </div>
                  </div>';

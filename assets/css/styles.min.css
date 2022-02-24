@@ -8,7 +8,7 @@
 
 #admin_dashboard {
     width: 25%;
-    height: 63rem;
+    height: 73rem;
     background: #a3b3ed;
     display: flex;
     flex-direction: column;
@@ -40,11 +40,6 @@
 
 #show_container {
     width: 73%
-}
-
-#notice_container {
-    /* margin-top: 215px; */
-    margin-left: 50px
 }
 
 #Admin_room_details,
@@ -331,7 +326,7 @@
 .newsletter-subscribe {
     color: #313437;
     background-color: #fff;
-    padding: 50px 0
+    padding: 10px 0;
 }
 
 .newsletter-subscribe p {
@@ -635,8 +630,4 @@ svg {
 
 a:hover {
     color: #2d3138
-}
-
-#big_notice_container {
-    width: 50%;
 }

@@ -1,5 +1,16 @@
 <?php 
 include 'partials/dbconnect.php';
+$errnotice = false ;
+if ($_SERVER['REQUEST_METHOD'] == 'POST'){
+    $name = $_POST['name'];
+    $complaint = $_POST['complain'];
+
+    $sqln = "INSERT INTO `complain` (`ComplainID`, `Complaint`, `student_name`) VALUES (NULL, '$complaint', ' $name')";
+    $resultn = mysqli_query($conn , $sqln);
+    if($resultn){
+        $errnotice = true ;
+    }
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -15,9 +26,20 @@ include 'partials/dbconnect.php';
     <link rel="stylesheet" href="assets/fonts/material-icons.min.css">
     <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
     <link rel="stylesheet" href="assets/css/styles.min.css">
+   
 </head>
 
 <body>
+    <?php 
+    if ($errnotice){
+        echo `<div class="alert alert-success alert-dismissible fade show" role="alert">
+        <strong>Success !</strong> Notice Inserted Successfully.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>`;
+      echo "<script type='text/javascript'>window.top.location='http://localhost/Hostel_Managment_System/complain.php';</script>"; exit;
+
+    }
+    ?>
     <div id="super_big_container">
         <div id="profile_big_container">
             <div id="profile_image"></div>
@@ -39,8 +61,8 @@ include 'partials/dbconnect.php';
             <div class="form-container">
                 <form method="post">
                     <h2 class="text-center"><strong>Complain Box</strong></h2>
-                    <input class="form-control text_input" type="text" placeholder="Name">
-                    <input class="form-control text_input" type="text" placeholder="Enter Your Complain">
+                    <input class="form-control text_input" type="text" name = "name"placeholder="Name">
+                    <input class="form-control text_input" type="text" name = "complain" placeholder="Enter Your Complain">
                     <div class="mb-3"><button class="btn btn-primary bg-dark d-block w-100" type="submit">Submit Complain</button></div>
                 </form>
             </div>
