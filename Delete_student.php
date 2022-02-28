@@ -1,6 +1,17 @@
 <?php 
 include 'partials/dbconnect.php';
 session_start();
+if($_SERVER['REQUEST_METHOD'] == 'POST'){
+    $username = $_POST['name'];
+    $enrollment_No = $_POST['enrolno'];
+
+    $delete_sql = "DELETE FROM `student_information` WHERE `student_enrollment` = $enrollment_No";
+    $delete_result = mysqli_query($conn , $delete_sql);
+    if($delete_result){
+        echo "deleted record";
+    }
+}
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -8,7 +19,7 @@ session_start();
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Admin Dashboard</title>
+    <title>Un Register</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
@@ -16,6 +27,17 @@ session_start();
     <link rel="stylesheet" href="assets/fonts/material-icons.min.css">
     <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
     <link rel="stylesheet" href="assets/css/styles.min.css">
+    <style>
+        .form_container {
+            display : flex ;
+            width : 70%;
+            justify-content : center ;
+            align-items : center ;
+        }
+        .form-container {
+            width : 30rem ;
+        }
+    </style>
 </head>
 
 <body>
@@ -36,7 +58,7 @@ session_start();
             <ul id="list">
                 <li class="list_items"><a class="list_item_link" href="index.php">Home</a></li>
                 <li class="list_items"><a class="list_item_link" href="admin_rooms.php"><i class="fa fa-square list_icon"></i>Rooms</a></li>
-                <li class="list_items"><a class="list_item_link" href="manage_students.php"><i class="icon ion-person-stalker list_icon"></i>Student Details</a></li>
+                <li class="list_items"><a class="list_item_link" href="manage_studentS.php"><i class="icon ion-person-stalker list_icon"></i>Student Details</a></li>
                 <li class="list_items"><a class="list_item_link" href="Delete_student.php"><i class="icon ion-person-stalker list_icon"></i>UnRegister</a></li>
                 <li class="list_items">
                     <a class="list_item_link" href="Admin_registration.php">
@@ -58,12 +80,15 @@ session_start();
 </svg>LogOut</a></li> -->
             </ul>
         </div>
-        <div id="show_container">
-            <p>Welcome to the Admin Page</p>
-            <div class="row row-cols-4">
-                <div class="col">
-                    <div></div>
-                </div>
+    
+        <div class="form_container">
+        <div class="form-container">
+                <form method="post">
+                    <h2 class="text-center"><strong>Cancel Registration</strong></h2>
+                    <input class="form-control text_input" type="text" name = "name" placeholder="Name">
+                    <input class="form-control text_input" type="text" name = "enrolno" placeholder="Enrollment No">
+                    <div class="mb-3"><button class="btn btn-primary bg-dark d-block w-100" type="submit">Submit</button></div>
+                </form>
             </div>
         </div>
     </div>
