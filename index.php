@@ -37,6 +37,9 @@
                         <li class="nav-item">
                             <a class="nav-link" href="/Hostel_Managment_System/notice.php">Notice&nbsp;</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Hostel_Managment_System/menu.php">Menu&nbsp;</a>
+                        </li>
                         <li class="nav-item"><a class="nav-link" href="contact.php">Contact Us&nbsp;</a>
                         </li>
                         <!-- <li class="nav-item">
@@ -78,8 +81,8 @@
     <div id="about_us">
         <div id="about_us_image"></div>
         <div id="about_us_content">
-            <p id="about_us_para"><br>Our hostel is located in the city’s finest&nbsp;and trendiest district. Everyone who is interested in being a part of the creative and cutting-edge world that is New York, you are welcome to CityHostel for the best experience.<br><br></p>
-            <button class="btn btn-primary" id="about_us_button" type="button">More About Us!</button>
+            <p id="about_us_para"><br>Our website Hosteller Provides Hostel managment services that are very hectic and time comsuming when done manually. It will be helpful for the students to stay with the latest updates happening in the hostel. It will be very helpful for the hostel managment staffs to better manage and monitor everything happening in the hostel.  <br><br></p>
+            <button class="btn btn-primary" id="about_us_button" onclick="about()" type="button">More About Us!</button>
         </div>
     </div>
     <div id="facilities">
@@ -123,7 +126,7 @@
                     </div>
                     <div class="col-md-6 item text">
                         <h3>Hosteller</h3>
-                        <p>Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac sem lacus. Ut vehicula rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit pulvinar dictum vel in justo.</p>
+                        <p>Hosteller ! a wonderful and all-in-one platform for the hostel students and the staffs to better manage the students and hostel.</p>
                     </div>
                     <div class="col item social">
                         <a href="#">
@@ -140,6 +143,9 @@
     </div>
     <script>
      console.log("welcome to the world of programming");
+     function about(){
+        window.location.href = "http://localhost/Hostel_Managment_System/contact.php";
+     }
     </script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 </body>

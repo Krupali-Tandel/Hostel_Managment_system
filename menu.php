@@ -8,7 +8,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Notice</title>
+    <title>Menu</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
@@ -22,6 +22,17 @@
     flex-wrap: wrap;
     width: 80%;
     margin-top : 120px ;
+        }
+        .menu_table{
+            width : 80%;
+        }
+        .menu_container {
+        
+            display : flex;
+            flex-direction : column;
+            justify_content : center ;
+            align-items : center ;
+            margin-top:150px ;
         }
     </style>
 </head>
@@ -72,30 +83,270 @@
             </div>
         </nav>
     </div>
-    <div id="notice_container">
-        <div class="container">
-            <?php 
-                $sqle ="SELECT * FROM `notice` ";
-                $resulte  = mysqli_query($conn , $sqle);
-                $row = mysqli_num_rows($resulte);
-                if($row > 0){
-                 while($rowDATA = mysqli_fetch_assoc($resulte)){
-                     echo '
-                     <div class="card" style="width: 18rem;">
-                     <div class="card-body">
-                         <h5 class="card-title">Notice </h5>
+    <div class="menu_container">
+        <h1>Mess Menu</h1>
+    <table class = "menu_table" border="1" height="100%" width="100%" >
+ <tr>
+     <th>DAY </th>
+    <th>BREAKFAST </th>
+    <th>LUNCH </th>
+    <th>Afternoon_Snacks </th>
+    <th> Dinner </th>
+</tr>
 
-                         <p class="card-text">'.$rowDATA['DateAndTime'] .'</p>
-                         <p class="card-text">'.$rowDATA['Notice_content'] .'</p>
+<tr>
+    <td>Monday</td>
+    <td>
+        <ul> 
+            <li>Tea,Milk</li>
+            <li> Bread,Butter,Jam </li>
+                <li>Poha,sujji-Halwa</li>
+            </ul>
+    </td>
+
+    <td>
+        <ul>
+            <li>Mix veg  </li>
+            <li> Roti   </li>
+                <li>Rice </li>
+                    <li>Dal-Makhni</li>
                         
- 
-                     </div>
-                 </div>';
-                    
-                 }
-                }
-                ?>
-        </div>
+                             <li>Salad</li>
+        </ul>
+    </td>
+
+    <td>
+        <ul>
+            <li>Juice  </li>
+            <li> Fruits   </li>
+        </ul>
+    </td>
+
+    <td>
+        <ul>
+            <li> Roti   </li>
+            <li>Sabji </li>
+             <li>Dal</li>
+             <li>Salad</li>
+        </ul>
+      
+    </td>
+</tr>
+
+<tr>
+    <td>Tueday</td>
+    <td>
+        <ul> 
+            <li>Tea,Milk</li>
+            <li> Bread,Butter,Jam </li>
+                <li>Dosa,Sambhar,coconut-chutni</li>
+            </ul>
+    </td>
+
+    <td>
+        <ul>
+            <li>Sabji  </li>
+            <li> Roti   </li>
+            <li>Moong-Dal</li>
+            <li>Salad</li>
+        </ul>
+    </td>
+
+    <td>
+        <ul>
+            <li>Juice  </li>
+            <li> Fruits   </li>
+        </ul>
+    </td>
+
+    <td>
+        <ul>
+            <li> Roti   </li>
+            <li>Sabji </li>
+             <li>Dal</li>
+             <li>Salad</li>
+        </ul>
+      
+    </td>
+    </tr>
+    <tr>
+
+    <td>Wednesday</td>
+    <td>
+        <ul> 
+            <li>Tea,Milk</li>
+            <li> Bread,Butter,Jam </li>
+                <li>Poha</li>
+            </ul>
+    </td>
+
+    <td>
+        <ul>
+            <li>Aloo-Prathe, Curd  </li>
+            <li>Salad</li>
+        </ul>
+    </td>
+
+    <td>
+        <ul>
+            <li>Juice  </li>
+            <li> Fruits   </li>
+        </ul>
+    </td>
+
+    <td>
+        <ul>
+            <li> Roti   </li>
+            <li>Sabji </li>
+             <li>Dal</li>
+             <li>Rice</li>
+        </ul>
+      
+    </td>
+</tr>
+
+    <tr>
+
+    <td>Thrusday</td>
+    <td>
+        <ul> 
+            <li>Tea,Milk</li>
+            <li> Bread,Butter,Jam </li>
+                <li>Poha</li>
+            </ul>
+    </td>
+
+    <td>
+        <ul>
+            <li>Punjabi dal, Roti  </li>
+            <li>Salad</li>
+        </ul>
+    </td>
+
+    <td>
+        <ul>
+            <li>Juice  </li>
+            <li> Fruits   </li>
+        </ul>
+    </td>
+
+    <td>
+        <ul>
+            <li> Roti   </li>
+            <li>Sabji </li>
+            
+        </ul>
+      
+    </td>
+</tr>
+<tr>
+    <td>Friday</td>
+    <td>
+        <ul> 
+            <li>Tea,Milk</li>
+         <li>Handva</li>
+               
+            </ul>
+    </td>
+
+    <td>
+        <ul>
+            <li>Dosa,Sambhar  </li>
+           
+        </ul>
+    </td>
+
+    <td>
+        <ul>
+            <li>Juice  </li>
+            <li> Fruits   </li>
+        </ul>
+    </td>
+
+    <td>
+        <ul>
+            <li> Roti   </li>
+            <li>Sabji </li>
+             <li>Dal</li>
+             <li>Rice</li>
+        </ul>
+      
+    </td>
+</tr>
+
+<tr>
+
+    <td>Saturday</td>
+    <td>
+        <ul> 
+            <li>Tea,Milk</li>
+            <li> Bread,Butter,Jam </li>
+                <li>Poha,Jalebi</li>
+            </ul>
+    </td>
+
+    <td>
+        <ul>
+            <li>Chole-Bhturra , kulche </li>
+          <li>Jeera Aloo</li>
+        </ul>
+    </td>
+
+    <td>
+        <ul>
+            <li>Juice  </li>
+            <li> Fruits   </li>
+        </ul>
+    </td>
+
+    <td>
+        <ul>
+            <li> Roti   </li>
+            <li>Paneer-Sabji </li>
+             
+        </ul>
+      
+    </td>
+</tr>
+
+<tr>
+    <td>Sunday</td>
+    <td>
+        <ul> 
+            <li>Tea,Milk</li>
+            <li>Sandwich </li>
+                <li>Poha, Khakra,Ras-gulle</li>
+            </ul>
+    </td>
+
+    <td>
+        <ul>
+            <li>Tanduri roti, punjabi dal  </li>
+            <li>Jeera-Rice</li>
+            <li>Salad</li>
+        </ul>
+    </td>
+
+    <td>
+        <ul>
+            <li>Juice  </li>
+            <li> Fruits   </li>
+        </ul>
+    </td>
+
+    <td>
+        <ul>
+            <li> kadi,Khichdi   </li>
+            <li>Sabji </li>
+             <li>Roti</li>
+            
+        </ul>
+      
+    </td>
+</tr>
+    
+</table>
+
     </div>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 </body>
