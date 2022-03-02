@@ -113,8 +113,8 @@ echo "<script type='text/javascript'>window.top.location='http://localhost/Hoste
                         Password</a></li> -->
                         <!-- <li class="list_items"><a class="list_item_link" href="show_complain.php"><i class="fa fa-exchange list_icon"></i>Show Complaints</a></li> -->
                         <li class="list_items"><a class="list_item_link" href="show_complain.php"><i class="fa fa-exchange list_icon"></i>Show Complaints</a></li>
-                <li class="list_items"><a class="list_item_link" href="attandance.php"><i
-                            class="fa fa-registered list_icon"></i>Attendance</a></li>
+                <!-- <li class="list_items"><a class="list_item_link" href="attandance.php"><i
+                            class="fa fa-registered list_icon"></i>Attendance</a></li> -->
                 <!-- <li class="list_items"><a class="list_item_link" href="#"><svg xmlns="http://www.w3.org/2000/svg"
                             width="1em" height="1em" viewBox="0 0 24 24" fill="none">
                             <path

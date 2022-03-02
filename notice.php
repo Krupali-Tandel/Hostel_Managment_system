@@ -37,8 +37,8 @@
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item"><a class="nav-link active" href="index.php">Home</a></li>
                         <!-- <li class="nav-item"><a class="nav-link" href="">About</a></li> -->
-                        <li class="nav-item"><a class="nav-link" href="admin_dashboard.php">Admin</a></li>
-                        <li class="nav-item"><a class="nav-link" href="student_dashboard.php">Student</a></li>
+                        <li class="nav-item"><a class="nav-link" href="admin_Login.php">Admin</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Login.php">Student</a></li>
                         <li class="nav-item"><a class="nav-link" href="notice.php">Notice&nbsp;</a></li>
                         <li class="nav-item"><a class="nav-link" href="menu.php">Menu&nbsp;</a></li>
                         <li class="nav-item"><a class="nav-link" href="contact.php">Contact Us&nbsp;</a></li>

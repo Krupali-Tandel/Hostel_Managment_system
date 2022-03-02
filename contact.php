@@ -46,8 +46,8 @@
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item"><a class="nav-link active" href="index.php">Home</a></li>
                         <!-- <li class="nav-item"><a class="nav-link" href="">About</a></li> -->
-                        <li class="nav-item"><a class="nav-link" href="admin_dashboard.php">Admin</a></li>
-                        <li class="nav-item"><a class="nav-link" href="student_dashboard.php">Student</a></li>
+                        <li class="nav-item"><a class="nav-link" href="admin_Login.php">Admin</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Login.php">Student</a></li>
                         <li class="nav-item"><a class="nav-link" href="notice.php">Notice&nbsp;</a></li>
                         <li class="nav-item"><a class="nav-link" href="contact.php">Contact Us&nbsp;</a></li>
                         <!-- <li class="nav-item"><a class="nav-link" href="#">Rooms</a></li> -->
@@ -86,7 +86,7 @@
             <div class="card" id="card_container">
                 <div class="card-body">
                     <h4 class="card-title"><i class="fa fa-location-arrow"></i>Address</h4>
-                    <p class="card-text contact_items"><br>155 Main Street, 17B, Brooklyn, NY<br><br></p>
+                    <p class="card-text contact_items"><br>155 Main Street, 17B,Dahod<br><br></p>
                 </div>
                 <div class="card-body">
                     <h4 class="card-title"><i class="fa fa-phone"></i>Phone No</h4>
